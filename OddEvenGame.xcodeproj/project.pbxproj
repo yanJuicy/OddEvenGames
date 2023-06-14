@@ -56,6 +56,7 @@
 		E9EE2A6C2A39AFAE005AF1F2 /* intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro.mp3; sourceTree = "<group>"; };
 		E9EE2A6D2A39AFAE005AF1F2 /* gamestart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gamestart.mp3; sourceTree = "<group>"; };
 		E9EE2A712A39B01C005AF1F2 /* Grammer_var.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Grammer_var.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E9EE2A722A39B189005AF1F2 /* DataType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DataType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				E9EE2A712A39B01C005AF1F2 /* Grammer_var.playground */,
+				E9EE2A722A39B189005AF1F2 /* DataType.playground */,
 			);
 			path = playground;
 			sourceTree = "<group>";
