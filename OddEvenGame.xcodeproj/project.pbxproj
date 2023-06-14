@@ -58,6 +58,7 @@
 		E9EE2A712A39B01C005AF1F2 /* Grammer_var.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Grammer_var.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E9EE2A722A39B189005AF1F2 /* DataType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DataType.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E9EE2A732A39B846005AF1F2 /* Grammer_if.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Grammer_if.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E9EE2A742A39E470005AF1F2 /* Grammer_property.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Grammer_property.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +145,7 @@
 				E9EE2A712A39B01C005AF1F2 /* Grammer_var.playground */,
 				E9EE2A722A39B189005AF1F2 /* DataType.playground */,
 				E9EE2A732A39B846005AF1F2 /* Grammer_if.playground */,
+				E9EE2A742A39E470005AF1F2 /* Grammer_property.playground */,
 			);
 			path = playground;
 			sourceTree = "<group>";
