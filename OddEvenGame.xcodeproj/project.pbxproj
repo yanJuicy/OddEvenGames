@@ -19,6 +19,7 @@
 		E9EE2A6E2A39AFAE005AF1F2 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2A6B2A39AFAE005AF1F2 /* click.mp3 */; };
 		E9EE2A6F2A39AFAE005AF1F2 /* intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2A6C2A39AFAE005AF1F2 /* intro.mp3 */; };
 		E9EE2A702A39AFAE005AF1F2 /* gamestart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9EE2A6D2A39AFAE005AF1F2 /* gamestart.mp3 */; };
+		E9F447772A41DAE80018F024 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F447762A41DAE80018F024 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		E9EE2A732A39B846005AF1F2 /* Grammer_if.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Grammer_if.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E9EE2A742A39E470005AF1F2 /* Grammer_property.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Grammer_property.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E9F447752A4083FE0018F024 /* DelegatePattern.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DelegatePattern.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E9F447762A41DAE80018F024 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				E9EE2A3A2A31B47F005AF1F2 /* Assets.xcassets */,
 				E9EE2A3C2A31B47F005AF1F2 /* LaunchScreen.storyboard */,
 				E9EE2A3F2A31B47F005AF1F2 /* Info.plist */,
+				E9F447762A41DAE80018F024 /* SettingViewController.swift */,
 			);
 			path = OddEvenGame;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				E9EE2A362A31B47D005AF1F2 /* ViewController.swift in Sources */,
 				E9EE2A322A31B47C005AF1F2 /* AppDelegate.swift in Sources */,
 				E9EE2A342A31B47C005AF1F2 /* SceneDelegate.swift in Sources */,
+				E9F447772A41DAE80018F024 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

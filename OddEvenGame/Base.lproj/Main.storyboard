@@ -66,6 +66,19 @@
                                     <action selector="gameStartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKA-7d-odA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cof-oC-OA0">
+                                <rect key="frame" x="314" y="54" width="90" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="66r-FN-6fQ"/>
+                                    <constraint firstAttribute="width" constant="50" id="D61-n0-9Qc"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system" title="설정"/>
+                                <connections>
+                                    <action selector="settingBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="66E-Kv-OIU"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-4h-FvM" userLabel="Image Container">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
@@ -86,7 +99,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ee2-a8-p2s" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="358-me-JQa"/>
+                            <constraint firstItem="Cof-oC-OA0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="EXr-XL-PZY"/>
                             <constraint firstItem="pL3-it-L2g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G5f-iB-5Ww"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cof-oC-OA0" secondAttribute="trailing" constant="10" id="MZH-hf-jq2"/>
                             <constraint firstItem="Yqp-4h-FvM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y4a-dA-3Qd"/>
                             <constraint firstItem="Ee2-a8-p2s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cb7-Co-OTu"/>
                             <constraint firstItem="Ee2-a8-p2s" firstAttribute="bottom" secondItem="Yqp-4h-FvM" secondAttribute="bottom" id="gPe-i3-0tX"/>
@@ -96,6 +111,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pL3-it-L2g" secondAttribute="trailing" id="rsG-WV-dcF"/>
                             <constraint firstItem="Ee2-a8-p2s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sKl-LF-Nc0"/>
                             <constraint firstItem="Ee2-a8-p2s" firstAttribute="top" secondItem="pL3-it-L2g" secondAttribute="bottom" id="wu9-1D-0dS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cof-oC-OA0" secondAttribute="trailing" constant="10" id="zys-RR-NJW"/>
                         </constraints>
                     </view>
                     <connections>
@@ -110,10 +126,67 @@
             </objects>
             <point key="canvasLocation" x="-13.043478260869566" y="52.901785714285715"/>
         </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="OAc-oU-VH5">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="40M-bp-rUT" customClass="SettingViewController" customModule="OddEvenGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xY9-HX-Sc0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="LU5-Bh-6Hg">
+                                <rect key="frame" x="141.5" y="431" width="131.5" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구슬 개수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvR-ZK-sNl">
+                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUD-rs-0f9">
+                                        <rect key="frame" x="99.5" y="0.0" width="32" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kje-kK-QLn">
+                                <rect key="frame" x="0.0" y="811" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5zt-ya-Umb"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="수정 완료"/>
+                                <connections>
+                                    <action selector="completeBtnPressed:" destination="40M-bp-rUT" eventType="touchUpInside" id="NFw-JO-nZn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4ii-yg-sL6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LU5-Bh-6Hg" firstAttribute="centerY" secondItem="xY9-HX-Sc0" secondAttribute="centerY" id="4ZP-Gg-CI0"/>
+                            <constraint firstItem="4ii-yg-sL6" firstAttribute="trailing" secondItem="Kje-kK-QLn" secondAttribute="trailing" id="BX4-ni-GxW"/>
+                            <constraint firstItem="Kje-kK-QLn" firstAttribute="leading" secondItem="4ii-yg-sL6" secondAttribute="leading" id="LAD-1d-xXH"/>
+                            <constraint firstItem="4ii-yg-sL6" firstAttribute="bottom" secondItem="Kje-kK-QLn" secondAttribute="bottom" id="OU5-7j-3PA"/>
+                            <constraint firstItem="LU5-Bh-6Hg" firstAttribute="centerX" secondItem="xY9-HX-Sc0" secondAttribute="centerX" id="z1V-uW-sfQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ballCountsTextField" destination="aUD-rs-0f9" id="9h3-kd-qbX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ika-vR-HM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="53"/>
+        </scene>
     </scenes>
     <resources>
         <image name="comImage" width="259" height="271"/>
         <image name="fistImage" width="1280" height="1255"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="userImage" width="269" height="292"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
